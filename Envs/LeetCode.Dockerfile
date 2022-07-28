@@ -2,7 +2,7 @@ FROM ubuntu:kinetic
 
 LABEL MAINTAINER="https://github.com/ThBlitz"
 LABEL VERSION="0.0.0"
-LABEL DESCRIPTION="ubuntu:kinetic || python-3.8 || node.js-16.15 || Rust"
+LABEL DESCRIPTION="ubuntu:kinetic | python-3.8 | node.js-16.15 | Rust"
 
 RUN apt-get update
 RUN apt-get upgrade -y
