@@ -18,47 +18,45 @@ Checkout NeetCode-150 @ - https://neetcode.io/ <br />
 - Run any files from the terminal. (5)
 - follow the same steps from 3 to re-run containers. (7)
 
-___
-
-1. Make sure to run all the commands from the project root directory.
+1. **Make sure to run all the commands from the project root directory.**
 
         i.e The root directory is : ./home/projects/NeetCode-150
 
-2. Build the docker image 'leetcode' from the docker file leetcode.Dockerfile.
+2. **Build the docker image 'leetcode' from the docker file leetcode.Dockerfile.**
 
         docker build -t leetcode -f Envs/leetcode.Dockerfile Envs
     
-    Building the image may take 5 - 10 mins. This is done only for the first time.
+    *Building the image may take 5 to 15 mins. This is done only for the first time.*
 
-3. Run a container called leetcode from the built image.
+3. **Run a container called leetcode from the built image.**
 
-    For windows cmd
+    *For windows cmd*
 
         docker run --rm -d -t --name=leetcode -v %cd%:/home/mount leetcode 
 
-    For Mac terminal OR windows powershell
+    *For Mac terminal OR windows powershell*
 
         docker run --rm -d -t --name=leetcode -v ${PWD}:/home/mount leetcode
 
-    For linux terminal
+    *For linux terminal*
 
         docker run --rm -d -t --name=leetcode -v $(pwd):/home/mount leetcode
 
-4. Open a interactive terminal from the running leetcode container.
+4. **Open a interactive terminal from the running leetcode container.**
 
         docker exec -ti leetcode bash
 
-5. Run any files from within the shell.
+5. **Run any files from within the shell.**
 
         ls
         cd Arrays
         cd two_sum
         node two_sum.js
 
-6. To stop and remove the running container.
+6. **To stop and remove the running container.**
 
         docker stop leetcode
 
-7. To re-run the leetcode image.
+7. **To re-run the leetcode image.**
 
         follow the same steps from step 3 above.
