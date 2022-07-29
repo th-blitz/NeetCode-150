@@ -2,16 +2,16 @@
 
 All NeetCode 150 Problem solutions + Other Algos.
 
-## Docker Image setup.
+## Docker Image setup
 
 Instructions to setup the docker image.
 
-1. -> Make sure to run all commands from the project root directory.
-2. -> build and setup the leetcode docker image. (Envs/leetcode.Dockerfile)
-3. -> run a docker container from the leetcode image.
-4. -> Open a interactive terminal from the running container.
-5. -> Run any files from the terminal.
-6. -> follow the same steps from 3 to re-run containers.
+- Make sure to run all commands from the project root directory.
+- build and setup the leetcode docker image. (Envs/leetcode.Dockerfile)
+- run a docker container from the leetcode image.
+- Open a interactive terminal from the running container.
+- Run any files from the terminal.
+- follow the same steps from 3 to re-run containers.
 
 1. Make sure to run all the commands from the project root directory.
 
