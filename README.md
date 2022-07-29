@@ -1,49 +1,57 @@
 # NeetCode-150
 
-All NeetCode 150 Problems + Algos.
+All NeetCode 150 Problem solutions + Other Algos.
 
-### Docker Image setup.
+## Docker Image setup.
 
-Instructions to setup the docker image. 
+Instructions to setup the docker image.
+
+step 1 -> Make sure to run all commands from the project root directory.
+step 2 -> build and setup the leetcode docker image. (Envs/leetcode.Dockerfile)
+step 3 -> run a docker container from the leetcode image.
+step 4 -> Open a interactive terminal from the running container.
+step 5 -> Run any files from the terminal.
+step 6 -> follow the same steps from 3 to re-run containers.
 
 1. Make sure to run all the commands from the project root directory.
 
-        The root directory is : $/NeetCode-150
+        i.e The root directory is : ./home/projects/NeetCode-150
 
 2. Build the docker image 'leetcode' from the docker file leetcode.Dockerfile.
 
         docker build -t leetcode -f Envs/leetcode.Dockerfile Envs
+    
+    Building the image may take 5 - 10 mins. This is done only for the first time.
 
-3. Building the image may take 5 - 10 mins. This is done only for the first time.
+3. Run a container called leetcode from the built image.
 
-4. Run leetcode:latest docker image.
+    For windows cmd
 
-        # For windows cmd
         docker run --rm -d -t --name=leetcode -v %cd%:/home/mount leetcode 
 
-        # For Mac terminal 
-        # Or 
-        # windows powershell
+    For Mac terminal OR windows powershell
+
         docker run --rm -d -t --name=leetcode -v ${PWD}:/home/mount leetcode
 
-        # For linux terminal
+    For linux terminal
+
         docker run --rm -d -t --name=leetcode -v $(pwd):/home/mount leetcode
 
-5. Open a interactive Shell from the running leetcode container.
+4. Open a interactive terminal from the running leetcode container.
 
         docker exec -ti leetcode bash
 
-6. Run any files from within the shell.
+5. Run any files from within the shell.
 
         ls
         cd Arrays
         cd two_sum
         node two_sum.js
 
-7. To stop and remove the running container.
+6. To stop and remove the running container.
 
         docker stop leetcode
 
-8. To re-run the leetcode image.
+7. To re-run the leetcode image.
 
-        follow the same steps from step 4 above.
+        follow the same steps from step 3 above.
