@@ -1,17 +1,21 @@
 # NeetCode-150
 
-All NeetCode 150 Problem solutions + Other Algos.
+All NeetCode 150 Problem solutions + miscellaneous Algos.
 
-## Docker Image setup
+# Docker Image setup
 
-Instructions to setup the docker image.
+set up the docker image at Envs/leetcode.Dockerfile (1.73 GB) to run all the scripts within the project.<br /> 
+The image includes python 3.8, node 16.15, g++, gcc and jdk-11.
 
-- Make sure to run all commands from the project root directory.
-- build and setup the leetcode docker image. (Envs/leetcode.Dockerfile)
-- run a docker container from the leetcode image.
-- Open a interactive terminal from the running container.
-- Run any files from the terminal.
-- follow the same steps from 3 to re-run containers.
+### Instructions to setup the docker image.
+
+- Make sure to run all commands from the project root directory. (1)
+- build and setup the leetcode docker image. (Envs/leetcode.Dockerfile) (2)
+- run a docker container from the leetcode image. (3)
+- Open a interactive terminal from the running container. (4)
+- Run any files from the terminal. (5)
+- follow the same steps from 3 to re-run containers. (7)
+
 
 1. Make sure to run all the commands from the project root directory.
 
