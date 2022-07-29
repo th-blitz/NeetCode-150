@@ -36,10 +36,19 @@ RUN make install
 RUN pip3 install virtualenv --no-cache-dir
 RUN pip3 install requests --no-cache-dir
 
-# RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
-# ENV ENV PATH="/root/.cargo/bin:${PATH}"
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+ENV ENV PATH="/root/.cargo/bin:${PATH}"
 
-RUN apt-get install openjdk-11-jdk -y
+RUN mkdir /home/jvm
+WORKDIR /home/jvm
+RUN wget https://download.java.net/java/GA/jdk18.0.2/f6ad4b4450fd4d298113270ec84f30ee/9/GPL/openjdk-18.0.2_linux-x64_bin.tar.gz
+RUN tar -xvzf openjdk-18.0.2_linux-x64_bin.tar.gz
+RUN rm openjdk-18.0.2_linux-x64_bin.tar.gz
+WORKDIR /home/jvm/jdk-18.0.2
+RUN update-alternatives --install "/usr/bin/java" "java" "/home/jvm/jdk-18.0.2/bin/java" 0
+RUN update-alternatives --install "/usr/bin/javac" "javac" "/home/jvm/jdk-18.0.2/bin/javac" 0
+RUN update-alternatives --set java /home/jvm/jdk-18.0.2/bin/java 
+RUN update-alternatives --set javac /home/jvm/jdk-18.0.2/bin/javac
 
 WORKDIR /home
 RUN mkdir -p mount
