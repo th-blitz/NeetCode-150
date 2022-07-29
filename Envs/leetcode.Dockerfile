@@ -2,7 +2,7 @@ FROM ubuntu:kinetic
 
 LABEL MAINTAINER="https://github.com/ThBlitz"
 LABEL VERSION="0.0.0"
-LABEL DESCRIPTION="ubuntu:kinetic | python-3.8 | node.js-16.15 | Rust"
+LABEL DESCRIPTION="ubuntu:kinetic | python-3.8 | node.js-16.15 | Java | Rust"
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -37,9 +37,9 @@ RUN pip3 install virtualenv --no-cache-dir
 RUN pip3 install requests --no-cache-dir
 
 # RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
-# ENV PATH="/root/.cargo/bin:${PATH}"
+# ENV ENV PATH="/root/.cargo/bin:${PATH}"
 
-RUN apt install default-jre -y
+RUN apt-get install openjdk-11-jdk -y
 
 WORKDIR /home
 RUN mkdir -p mount
