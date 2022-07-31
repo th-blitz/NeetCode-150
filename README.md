@@ -28,8 +28,11 @@ The list @ https://neetcode.io/ <br />
 
 2. **Build the docker image 'leetcode' from the docker file leetcode.Dockerfile.**
 
+
         ```docker
-        docker build -t leetcode -f Envs/leetcode.Dockerfile Envs
+
+                docker build -t leetcode -f Envs/leetcode.Dockerfile Envs
+        
         ```
 
     *Building the image may take 5 to 15 mins. This is done only for the first time.*
