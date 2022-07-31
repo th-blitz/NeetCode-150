@@ -18,7 +18,7 @@ The list @ https://neetcode.io/ <br />
 ### 1. **Make sure to run all the commands from the project root directory.**
 
 ```sh
-cd ./home/projects/NeetCode-150
+cd /home/projects/NeetCode-150
 ```
 
 ### 2. **Build the docker image 'leetcode' from the docker file leetcode.Dockerfile.**
