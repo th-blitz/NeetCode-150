@@ -1,3 +1,5 @@
+*.run
+*.out
 *.a
 *.idea
 *.class
