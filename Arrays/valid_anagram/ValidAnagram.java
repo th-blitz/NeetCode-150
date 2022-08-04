@@ -53,10 +53,10 @@
 import java.util.HashMap;
 import java.util.Map;
 class ValidAnagram {
-    // This handels unicode characters as well
+    // This handles unicode characters as well
     // S: O(N) because of hashMap
-    public boolean isAnagram(String s, String t) {
-        HashMap<Character,Integer> smap=new HashMap<>();
+    private boolean isAnagram(String s, String t) {
+        HashMap<Character,Integer> smap = new HashMap<>();
         int sl=s.length();
         int tl=t.length();
         if(sl!=tl){return false;}
