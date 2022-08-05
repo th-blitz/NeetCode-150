@@ -1,10 +1,10 @@
-# 377. Combination Sum IV 
+## 377. Combination Sum IV 
 ### Medium - https://leetcode.com/problems/combination-sum-iv/
 
 Given an array of distinct integers ``` nums ``` and a target integer ``` target ```, return the number 
 of possible combinations that add up to ``` target ```.<br />
 
-## Example 1. 
+### Example 1. 
 
 ``` 
 Input: nums = [1,2,3], target = 4
