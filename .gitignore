@@ -3,3 +3,4 @@
 *.a
 *.idea
 *.class
+\__pycache__
