@@ -36,11 +36,11 @@ fn print_nodes(node: &Option<Box<SingleListNode>>) {
     }
 }
 
-fn main() {
+// fn main() {
 
-    let array: Vec<i32> = vec!(1, 2, 3, 4, 5, 6, 7, 8);
-    let head = build_list(array);
+//     let array: Vec<i32> = vec!(1, 2, 3, 4, 5, 6, 7, 8);
+//     let head = build_list(array);
 
-    print_nodes(&head);
+//     print_nodes(&head);
 
-}
+// }
