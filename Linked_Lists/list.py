@@ -5,6 +5,24 @@ class Single_List_Node:
         self.val = val
         self.next = next
 
+def build_list(array):
+    root = None
+    if len(array) != 0:
+        root = Single_List_Node(array[0])
+        node = root
+        for val in array[1:]:
+            node.next = Single_List_Node(val)
+            node = node.next
+    return root
+
+def print_list(message, node):
+    array = []
+    while node != None:
+        array.append(node.val)
+        node = node.next
+    print(message, array)
+    return
+
 class Single_Linked_List:
     def __init__(self, array):
         self.__list_len = len(array)

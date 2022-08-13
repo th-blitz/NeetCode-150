@@ -2,9 +2,9 @@
 
 
 #[derive(Debug)]
-struct SingleListNode {
-    val: i32,
-    next: Option<Box<SingleListNode>>,
+pub struct SingleListNode {
+    pub val: i32,
+    pub next: Option<Box<SingleListNode>>,
 }
 
 impl SingleListNode {
@@ -13,7 +13,7 @@ impl SingleListNode {
     }
 }
 
-fn build_list(array: Vec<i32>) -> Option<Box<SingleListNode>> {
+pub fn build_list(array: Vec<i32>) -> Option<Box<SingleListNode>> {
     let mut current = None;
     
     for i in (0..array.len()).rev() {
@@ -24,7 +24,7 @@ fn build_list(array: Vec<i32>) -> Option<Box<SingleListNode>> {
     return current;
 }
 
-fn print_nodes(node: &Option<Box<SingleListNode>>) {
+pub fn print_nodes(node: &Option<Box<SingleListNode>>) {
     match node {
         &Some(ref node) => {
             print!("{} > ", node.val);
