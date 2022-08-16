@@ -35,8 +35,9 @@ void print_tree(struct BinaryTree* root, int level)
 {
         if (root == NULL)
                 return;
-        for (int i = 0; i < level; i++)
-                printf(i == level - 1 ? "|-" : "  ");
+        for (int i = 0; i < level; i++){
+            printf(i == level - 1 ? "|-" : "  ");
+        } 
         printf("%d\n", root->val);
         print_tree(root->left, level + 1);
         print_tree(root->right, level + 1);
