@@ -32,11 +32,11 @@ BinaryTree* build_tree(std::vector<int> &array) {
 }
 
 // @ https://stackoverflow.com/questions/13484943/print-a-binary-tree-in-a-pretty-way
-void postorder(BinaryTree* p, int indent = 1)
+void print_tree(BinaryTree* p, int indent = 1)
 {
     if(p != NULL) {
         if(p->right) {
-            postorder(p->right, indent+4);
+            print_tree(p->right, indent+4);
         }
         if (indent) {
             std::cout << std::setw(indent) << ' ';
@@ -45,7 +45,7 @@ void postorder(BinaryTree* p, int indent = 1)
         std::cout<< p->val << "\n ";
         if(p->left) {
             std::cout << std::setw(indent) << ' ' <<" \\\n";
-            postorder(p->left, indent+4);
+            print_tree(p->left, indent+4);
         }
     }
 }

@@ -10,7 +10,7 @@ pub struct BinaryTree {
 
 impl BinaryTree {
 
-    fn new(val: i32, left: Option<Box<BinaryTree>>, right: Option<Box<BinaryTree>>) -> Option<Box<BinaryTree>> {
+    pub fn new(val: i32, left: Option<Box<BinaryTree>>, right: Option<Box<BinaryTree>>) -> Option<Box<BinaryTree>> {
         return Some(Box::new(BinaryTree{val: val, left: left, right: right}));
     }
 
@@ -67,10 +67,10 @@ pub fn print_tree(node: &Option<Box<BinaryTree>>, indent: usize) {
 }
 
 
-fn main() {
+// fn main() {
 
-    let root = build_tree(&mut vec!(3, 2, 1, 4, 5, 3, 4, 5, 6, 3,7));
-    print_tree(&root, 0);
-}
+//     let root = build_tree(&mut vec!(3, 2, 1, 4, 5, 3, 4, 5, 6, 3,7));
+//     print_tree(&root, 0);
+// }
 
 
