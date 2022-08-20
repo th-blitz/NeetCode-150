@@ -1,3 +1,5 @@
+
+#[path = "../tree.rs"]
 mod tree;
 
 
