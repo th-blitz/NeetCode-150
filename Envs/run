@@ -1,0 +1,32 @@
+#!/usr/bin/bash
+
+file_name=$1
+file_type=$2
+
+if [ -z ${file_name} ] || [ -z ${file_type} ]
+then
+    file_name="__none__"
+    file_type="__none__"
+    echo "run {file_name} {file_extension}"
+fi
+
+if [ -n ${file_name} ] && [ -n ${file_type} ] && [ $file_type == "rs" ]
+then
+    rustc $file_name.rs -o $file_name.rs.out
+    ./$file_name.rs.out
+    rm $file_name.rs.out
+fi
+
+if [ -n ${file_name} ] && [ -n ${file_type} ] && [ $file_type == "cpp" ]
+then
+    g++ $file_name.cpp -o $file_name.cpp.out
+    ./$file_name.cpp.out
+    rm $file_name.cpp.out
+fi
+
+if [ -n ${file_name} ] && [ -n ${file_type} ] && [ $file_type == "c" ]
+then
+    gcc $file_name.c -o $file_name.c.out
+    ./$file_name.c.out
+    rm $file_name.c.out
+fi

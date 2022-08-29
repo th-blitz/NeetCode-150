@@ -18,6 +18,8 @@ RUN apt install libffi-dev
 RUN apt install wget -y
 RUN apt install curl -y
 
+RUN apt install valgrind -y 
+
 SHELL ["/bin/bash", "--login", "-i", "-c"]
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 RUN source /root/.bashrc && nvm install 16.15.1
@@ -54,8 +56,4 @@ WORKDIR /home
 RUN mkdir -p mount
 WORKDIR /home/mount
 
-COPY fox /usr/local/bin
-
-
-
-
+COPY run /usr/local/bin
