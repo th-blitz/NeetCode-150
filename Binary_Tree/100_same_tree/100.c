@@ -24,6 +24,7 @@ int main() {
     print_tree(p, 1);
     print_tree(q, 1);
     
-    printf("\n max depht : %d \n", isSame(p, q));
+    printf("\n is same : %d \n", isSame(p, q));
+
 
 }
