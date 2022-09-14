@@ -1,5 +1,5 @@
 class Solution:
-    def orangesRotting(self, grid: List[List[int]]) -> int:
+    def orangesRotting(self, grid) -> int:
         
         row_len = len(grid)
         col_len = len(grid[0])
