@@ -55,5 +55,3 @@ RUN update-alternatives --set javac /home/jvm/jdk-18.0.2/bin/javac
 WORKDIR /home
 RUN mkdir -p mount
 WORKDIR /home/mount
-
-COPY run /usr/local/bin
