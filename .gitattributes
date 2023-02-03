@@ -1,0 +1,9 @@
+
+* text=auto
+*.c text eol=lf
+*.py -text
+*.sh text eol=lf
+*.cpp text eol=lf
+*.bat text eol=crlf
+*.rs -text
+*.js -text
