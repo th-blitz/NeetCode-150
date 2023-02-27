@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdbool.h>
 
 
 #define min(a,b) (((a) < (b)) ? (a) : (b))
