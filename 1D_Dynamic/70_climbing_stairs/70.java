@@ -1,5 +1,5 @@
 /**
- * Recursion (bottom-up Approach) - Time limit exceeds.
+ * Recursion (Top-down Approach) - Time limit exceeds.
  * T: O(2 ^ N)
  * S: O(N)
  */
@@ -24,7 +24,7 @@
 // }
 
 /**
- * Recursion (bottom-up Approach) - with Memorization (DP)
+ * Recursion (Top-down Approach) - with Memorization (DP)
  * T: O(N)
  * S: O(N)
  */
