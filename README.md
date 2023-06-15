@@ -9,7 +9,7 @@ List @ https://neetcode.io/ <br />
 # Docker Image setup
 
 - Setup the docker image ``` leetcode.Dockerfile ``` (2.63 GB) at ./NeetCode/Envs/ . <br /> 
-- The iamge used here is ``` Ubuntu:kinetic ```.
+- The image used here is ``` Ubuntu:kinetic ```.
 - The Image includes; 
 - ``` Python 3.8.13 ```, ``` node v16.15.1 ```, ``` rust 1.62.1 ``` and ``` OpenJDK 18.0.2 ```.
 - Prerequisites - ``` Docker ``` for desktop/mac/linux. <br /> 
