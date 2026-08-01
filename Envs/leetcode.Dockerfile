@@ -1,8 +1,10 @@
-FROM ubuntu:kinetic
+FROM ubuntu:22.04
 
 LABEL MAINTAINER="https://github.com/ThBlitz | PreethamRakshith11@gmail.com"
 LABEL VERSION="0.1.0"
-LABEL DESCRIPTION="ubuntu:kinetic | python-3.9.13 | node.js-16.15 | Java Openjdk-18.0.2 | Rust 1.62.1 (latest)"
+LABEL DESCRIPTION="ubuntu:22.04 | python-3.9.13 | node.js-16.15 | Java Openjdk-18.0.2 | Rust 1.62.1 (latest)"
+USER root
+
 
 RUN apt-get update
 RUN apt-get upgrade -y
